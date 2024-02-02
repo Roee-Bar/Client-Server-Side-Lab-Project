@@ -5,22 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <link rel="stylesheet" href="/styles.css">
+    <script defer src="/js scripts/login.js"></script>
 </head>
 <body>
     <div id="login-container">
         <h1>Login</h1>
-        <form>
+        <form id="loginForm" onsubmit="return validateLogin()">
             <label for="userEmail">User Email</label>
-            <input type="text" id="userEmail" placeholder = "User Email" name="userEmail" required>
+            <input type="text" id="userEmail" placeholder="User Email" name="userEmail" required>
 
             <label for="password">Password</label>
-            <input type="password" id="password" placeholder = "Password" name="password" required>
+            <input type="password" id="password" placeholder="Password" name="password" required>
 
-            <button type="submit" onclick=checkInputValidation()>Log In</button>
+            <button type="submit">Log In</button>
         </form>
 
-        <a href="#" class="forgot-password">Forgot Password?</a>
-        <a href="#" class="sign-up">Sign Up</a>
+        <a href="signup.html" class="sign-up">Sign Up</a>
     </div>
 </body>
 </html>

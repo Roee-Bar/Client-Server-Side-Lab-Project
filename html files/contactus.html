@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script defer src="/js scripts/contactus.js"></script>
+</head>
+<body>
+    <div id="contactus-container">
+        <h1>Contact Us</h1>
+        <form id="contactForm" onsubmit="return validateContact()">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Name" name="name" required>
+
+            <label for="email">Email</label>
+            <input type="text" id="email" placeholder="Email" name="email" required>
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="Subject" name="subject" required>
+
+            <label for="predefinedSubjects">Select Subject</label>
+            <select id="predefinedSubjects" name="predefinedSubjects">
+                <option value="general">General Inquiry</option>
+                <option value="support">Technical Support</option>
+                <option value="billing">Billing Issue</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <button onclick="contactSupport()">Contact Support</button>
+    </div>
+</body>
+</html>

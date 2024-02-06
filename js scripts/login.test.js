@@ -2,20 +2,22 @@
 
 const { validateEmail, validatePassword } = require('./login');
 
-// Test validateEmail function
-test('Valid email returns true', () => {
-  expect(validateEmail('test@example.com')).toBe(true);
+describe('Login Page - validateEmail function', () => {
+  test('valid email returns true', () => {
+    expect(validateEmail('test@example.com')).toBe(true);
+  });
+
+  test('invalid email returns false', () => {
+    expect(validateEmail('invalidemail')).toBe(false);
+  });
 });
 
-test('Invalid email returns false', () => {
-  expect(validateEmail('invalid-email')).toBe(false);
-});
+describe('Login Page - validatePassword function', () => {
+  test('valid password returns true', () => {
+    expect(validatePassword('Abc@123')).toBe(true);
+  });
 
-// Test validatePassword function
-test('Valid password returns true', () => {
-  expect(validatePassword('StrongPwd1!')).toBe(true);
-});
-
-test('Invalid password returns false', () => {
-  expect(validatePassword('weakpwd')).toBe(false);
+  test('invalid password returns false', () => {
+    expect(validatePassword('weakpassword')).toBe(false);
+  });
 });

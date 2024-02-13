@@ -1,3 +1,5 @@
+// The file is named "index" because the corresponding HTML files is named "index" for GitHub Pages building and publishing
+
 function validateEmail(email) {
     var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
     return emailRegex.test(email);

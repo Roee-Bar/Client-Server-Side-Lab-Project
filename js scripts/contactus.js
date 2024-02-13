@@ -26,9 +26,3 @@ function contactSupport() {
     // You can add functionality to open an email application with the required details.
     alert("Opening email application for support...");
 }
-
-module.exports = {
-    validateContact,
-    validateEmail,
-    contactSupport
-  };

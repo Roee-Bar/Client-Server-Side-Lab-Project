@@ -1,8 +1,0 @@
-{
-  "devDependencies": {
-    "jsdom": "^24.0.0"
-  },
-  "jest": {
-    "testEnvironment": "jsdom"
-  }
-}

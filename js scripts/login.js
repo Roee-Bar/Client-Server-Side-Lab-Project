@@ -25,6 +25,3 @@ function validateLogin() {
     alert("Login Successful\n\nEmail: " + userEmail + "\nPassword: " + password);
     return true;
 }
-
-module.exports = { validateEmail, validatePassword };
-

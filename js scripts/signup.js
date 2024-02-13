@@ -35,10 +35,3 @@ function validateSignup() {
     alert("Account Created Successfully\n\nEmail: " + signupEmail + "\nPassword: " + signupPassword);
     return true;
 }
-
-module.exports = {
-    validateSignup,
-    validateEmail,
-    validatePassword,
-    validatePasswordMatch
-  };
